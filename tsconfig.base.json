@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-reproduce/constants": ["libs/constants/src/index.ts"],
+      "@nx-reproduce/directives/some-directives": [
+        "libs/directives/some-directives/src/index.ts"
+      ],
+      "@nx-reproduce/helpers/device-helper": [
+        "libs/helpers/device-helper/src/index.ts"
+      ],
+      "@nx-reproduce/shell": ["libs/shell/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

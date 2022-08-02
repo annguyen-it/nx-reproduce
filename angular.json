@@ -2,7 +2,11 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "constants": "libs/constants",
+    "directives-some-directives": "libs/directives/some-directives",
+    "helpers-device-helper": "libs/helpers/device-helper",
     "nx-reproduce": "apps/nx-reproduce",
-    "nx-reproduce-e2e": "apps/nx-reproduce-e2e"
+    "nx-reproduce-e2e": "apps/nx-reproduce-e2e",
+    "shell": "libs/shell"
   }
 }
