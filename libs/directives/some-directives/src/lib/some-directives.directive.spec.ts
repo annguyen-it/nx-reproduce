@@ -1,4 +1,5 @@
-import '@ng-web-apis/universal/mocks';
+import './intersectionObserverMock';
+// import '@ng-web-apis/universal/mocks';
 import { Component, DebugElement, DebugNode } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
@@ -27,7 +28,9 @@ describe('SomeDirectivesDirective', () => {
     elementsWithDirective = fixture.debugElement.queryAllNodes(
       By.directive(SomeDirectivesDirective)
     );
-    bareElement = fixture.debugElement.query(By.css(':not([tssSomeDirectives])'));
+    bareElement = fixture.debugElement.query(
+      By.css(':not([tssSomeDirectives])')
+    );
   });
 
   it('should have bare element', () => {
